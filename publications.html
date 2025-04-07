@@ -1,0 +1,103 @@
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="paper_dragon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="shortcut icon" href="paper_dragon.ico"> -->
+    <title>Tongliang Liu's Publications</title>
+    <!-- <base href="./index.html"> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript">
+
+     $(function() {
+        document.getElementById("load_years").onclick = function() {
+            $("#includedContent").load("years.html"); 
+        };
+      });
+
+//      $(function() {
+//         document.getElementById("load_topics").onclick = function() {
+//             $("#includedContent").load("topics.html"); 
+//         };
+//       });
+
+ //    $(function() {
+  //      document.getElementById("load_venues").onclick = function() {
+   //         $("#includedContent").load("venues.html"); 
+   //     };
+   //   });
+         $(function() {
+        document.getElementById("load_Featured").onclick = function() {
+            $("#includedContent").load("Featured.html"); 
+        };
+      });
+         $(function() {
+        document.getElementById("load_Top-Ranked").onclick = function() {
+            $("#includedContent").load("Top-Ranked.html"); 
+        };
+      });
+
+     //$(function() {
+      //  document.getElementById("load_top").onclick = function() {
+       //     $("#includedContent").load("top.html"); 
+      //  };
+     // });
+
+
+     // $("document").ready(function() {
+     //       $("#includedContent").load("years.html"); 
+     //   }); 
+    </script>
+
+</head>
+
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<h1 style="padding-left: 0.5em">Chenping Hou</h1><hr>
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="groups.html">Group</a></div>
+<!--<div class="menu-item"><a href="talks.html">Talks</a></div> -->
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<!--<div class="menu-item"><a href="service.html">Service</a></div>-->
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="grants.html">Grants</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="code.html">Codes & Data</a></div>
+<!--<div class="menu-item"><a href="award.html">Awards & honours</a></div>-->
+</td>
+<td id="layout-content">
+
+    <h1 style="margin-top: 0em">Publications</h1><br>
+  <!--  <p>[ <a href="#news">News</a>,
+        <a href="#interest">Research Interests</a>,
+        <a href="#job">Job Experience</a>,
+        <a href="#edu">Education</a> ]</p>-->
+
+ 
+<div>
+
+
+        <span style="font-size: 22;">
+         Sorted <a id="load_years">Publications by Year</a>, <a id="load_Featured">Featured Publications</a>, <a id="load_Top-Ranked">Top-Ranked Publications</a>.
+        </span>
+
+        <div id="includedContent">
+
+
+        </div>
+    </div>       
+
+
+
+
+
+</td>
+</tr>
+</table>
+</body>
+</html>
