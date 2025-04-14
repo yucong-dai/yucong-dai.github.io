@@ -15,29 +15,28 @@
 
 <body>
     <div class='paper-box' style="overflow: hidden; margin-bottom: 20px;">
-        <!-- 图片容器：左浮动，相对定位，设置固定宽高（可直接修改数值控制图片尺寸） -->
-        <div class='paper-box-image' style="float: left; position: relative; width: 1000px; height: 800px; margin-right: 20px;">
+        <!-- 图片容器：放大宽高（原200px×150px，现改为300px×225px） -->
+        <div class='paper-box-image' style="float: left; position: relative; width: 800px; height: 600px; margin-right: 20px;">
             <div>
-                <!-- 标签：绝对定位在左上角，设置背景色和字体颜色 -->
+                <!-- 标签位置和样式不变（可根据需要微调top/left值） -->
                 <div class="badge" style="position: absolute; top: 10px; left: 10px; padding: 5px 10px; background-color: #527bbd; color: black; font-size: 0.9em; border-radius: 3px;">
                     IEEE transactions on cybernetics 2013
                 </div>
-                <!-- 图片尺寸控制：直接设置宽高（与容器尺寸一致，可自由修改） -->
+                <!-- 图片保持充满容器（无需修改，自动适配容器尺寸） -->
                 <img src='images/Joint Embedding Learning and Sparse Regression A Framework for Unsupervised Feature Selection.png'
                      alt="sym" 
-                     style="width: 100%; height: 100%; object-fit: cover; border: none;"> <!-- 充满容器，保持尺寸 -->
+                     style="width: 100%; height: 100%; object-fit: cover; border: none;">
             </div>
         </div>
-        <!-- 文本容器：右浮动，占据剩余空间 -->
-        <div class='paper-box-text' markdown="1" style="float: left; width: calc(100% - 220px);"> <!-- 200px图片 + 20px间距 -->
-            <!-- 论文标题链接（颜色与原样式一致） -->
+        <!-- 文本容器：宽度重新计算（300px图片 + 20px间距） -->
+        <div class='paper-box-text' markdown="1" style="float: left; width: calc(100% - 320px);"> <!-- 关键：300+20=320px -->
+            <!-- 文本内容不变 -->
             <a href="https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf" style="color: #224b8d; text-decoration: none;">
                 Joint embedding learning and sparse regression: A framework for unsupervised feature selection
             </a>
             <p style="margin-top: 0.5em; margin-bottom: 0.8em; line-height: 1.3; color: #222222;">
                 <strong>C Hou</strong>, F Nie, X Li, D Yi, Y Wu.
             </p>
-            <!-- 项目链接 -->
             <a href="https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=jzjyORoAAAAJ&citation_for_view=jzjyORoAAAAJ:_kc_bZDykSQC" style="color: #224b8d; text-decoration: none;">
                 <strong>Project</strong>
             </a>
